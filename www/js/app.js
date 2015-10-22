@@ -52,7 +52,7 @@ yogaApp.config(function($stateProvider, $urlRouterProvider) {
     .state('main', {
         url: "/",
         templateUrl: "templates/main.html",
-        controller: 'yogaCtrl'
+        controller: 'sunSalutation'
     })
     .state('tadasana1', {
         url: "/tadasana",
