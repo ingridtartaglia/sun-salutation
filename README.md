@@ -4,6 +4,6 @@ Learn the sun salutation with this incredible ionic app!
 
 Technologies used:
 - HTML
-- CSS (SASS)
+- CSS 
 - JavaScript (AngularJS)
 - Ionic

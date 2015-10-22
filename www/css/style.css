@@ -1,1 +1,28 @@
 /* Empty. Add your own CSS if you like */
+ion-content {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-title {
+    padding-top: 4em;
+    color: rgb(84, 84, 84);
+    font-size: 3em;
+}
+.main-btn {
+    padding-top: 10em;
+}
+.asana-alias {
+    font-size:0.8em;
+    margin-bottom: 3em;
+}
+.asana-text {
+    color: rgb(84, 84, 84);
+    padding: 0 1em;
+    line-height: 1.25em;
+}
+.end-btn {
+    margin-top: 2em;
+}
+.uttanasana {
+    margin-top: 6em;
+}
