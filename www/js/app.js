@@ -5,8 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 var yogaApp = angular.module('yogaApp', ['ionic']);
 
-yogaApp.controller("yogaCtrl", function($scope){
-    $scope.yogaTitle = "Yoga for Beginners";
+yogaApp.controller("sunSalutation", function($scope){
+    $scope.yogaTitle = "Sun Salutation";
 });
 
 yogaApp.controller('tadasanaCtrl', function($scope) {
@@ -33,43 +33,72 @@ yogaApp.controller('adhoMukhaSvanasanaCtrl', function($scope) {
 
 })
 
+yogaApp.controller('uttanasana2Ctrl', function($scope) {
+
+})
+
+yogaApp.controller('urdhvaHastasana2Ctrl', function($scope) {
+
+})
+
+yogaApp.controller('tadasana2Ctrl', function($scope) {
+
+})
+
+
+
 yogaApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
     .state('main', {
-        url: "/main",
-        templateUrl: "www/templates/main.html",
+        url: "/",
+        templateUrl: "templates/main.html",
         controller: 'yogaCtrl'
     })
-    .state('tadasana', {
+    .state('tadasana1', {
         url: "/tadasana",
-        templateUrl: "www/templates/tadasana.html",
+        templateUrl: "templates/tadasana.html",
         controller: 'tadasanaCtrl'
     })
-    .state('urdhvahastasana', {
+    .state('urdhvahastasana1', {
         url: "/urdhvahastasana",
-        templateUrl: "www/templates/urdhva-hastasana.html",
+        templateUrl: "templates/urdhva-hastasana.html",
         controller: 'urdhvaHastasanaCtrl'
     })
-    .state('uttanasana', {
+    .state('uttanasana1', {
         url: "/uttanasana",
-        templateUrl: "www/templates/uttanasana.html",
+        templateUrl: "templates/uttanasana.html",
         controller: 'uttanasanaCtrl'
     })
     .state('chaturangadandasana', {
         url: "/chaturangadandasana",
-        templateUrl: "www/templates/chaturanga-dandasana.html",
+        templateUrl: "templates/chaturanga-dandasana.html",
         controller: 'chaturangaDandasanaCtrl'
     })
     .state('urdhvamukhasvanasana', {
         url: "/urdhvamukhasvanasana",
-        templateUrl: "www/templates/urdhva-mukha-svanasana.html",
+        templateUrl: "templates/urdhva-mukha-svanasana.html",
         controller: 'urdhvaMukhaSvanasanaCtrl'
     })
     .state('adhomukhasvanasana', {
         url: "/adhomukhasvanasana",
-        templateUrl: "www/templates/adho-mukha-svanasana.html",
+        templateUrl: "templates/adho-mukha-svanasana.html",
         controller: 'adhoMukhaSvanasanaCtrl'
+    })
+    .state('uttanasana2', {
+        url: "/uttanasanaend",
+        templateUrl: "templates/uttanasana2.html",
+        controller: 'uttanasana2Ctrl'
+    })
+    .state('urdhvahastasana2', {
+        url: "/urdhvahastasanaend",
+        templateUrl: "templates/urdhva-hastasana2.html",
+        controller: 'urdhvaHastasana2Ctrl'
+    })
+    .state('tadasana2', {
+        url: "/tadasanaend",
+        templateUrl: "templates/tadasana2.html",
+        controller: 'tadasana2Ctrl'
     });
-    // If none of the above states are matched, use this as the fallback:
-    $urlRouterProvider.otherwise('main');
+
+    $urlRouterProvider.otherwise('/');
 });
