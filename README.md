@@ -1,6 +1,6 @@
-# #20 - Yoga for Beginners
+# #20 - Sun Salutation
 ---
-Learn yoga with this incredible ionic app!
+Learn the sun salutation with this incredible ionic app!
 
 Technologies used:
 - HTML
